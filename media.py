@@ -4,7 +4,10 @@ import webbrowser
 
 
 class Movie():
-    # constructor to intialize object properties
+    # constructor to intialize object properties for the movie's title,
+    #  the movie's storyline, and image of the movie's original poster or
+    #  box art, and the url to the movie's original trailer video found on
+    #  youtube.
     def __init__(self, movie_title, movie_storyline, poster_image,
                  trailer_youtube):
         self.title = movie_title
@@ -15,4 +18,3 @@ class Movie():
     # method plays trailer in browser
     def show_trailer(self):
         webbrowser.open(self.trailer_youtube_url)
-
